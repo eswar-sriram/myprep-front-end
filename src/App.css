@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+.navbar {
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  height: 60px;
+  width: stretch;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-bottom: 1px solid #f2f2f2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar h1 {
+  float: left;
+  padding: 10px;
+  color: #a98181;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar p {
+  float: right;
+  padding: 10px;
+  color: #a98181;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.formData {
+  justify-content: center;
+  align-items: center;
+}
+
+.formData {
+  font-size: 20px;
   display: flex;
   flex-direction: column;
+  color: #f1356d;
+  border-radius: 10pt;
+  padding: 30px;
+  position: relative;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#footer div {
+  color: #f2f2f2;
+  width: 100%;
+  padding: 10px;
+  justify-content: left;
+  align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  min-width: 400px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.Maindiv {
+  position: relative;
+  height: stretch;
+  max-width: 100%;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  height: 60px;
+  display: flex;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+.tf-b {
+  width: 300px;
+  color: #333;
+}
+
+.card {
+  justify-content: center;
+
+  background-color: #333;
+  width: 200px;
+  margin: 10;
+}
+
+.addTaskdiv {
+  margin: 20px;
+}
+
+.gh {
+  float: right;
 }
