@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     
     return ( 
     <div id="footer"> 
         <div>
-            <p>Hi this is my website</p>
+            <p>This website has been created by <a href="https://www.linkedin.com/in/eswar-sri-ram/">Eswar</a> as a personal project</p>
         </div>
         <div>
-            <p>Hi this is my website</p>
+                <Link to="/about">About</Link>
+                <br/>
+                <Link to="/signin">Signin</Link>
         </div>
     </div>
   );

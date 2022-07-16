@@ -2,10 +2,9 @@ import {Link} from 'react-router-dom';
 const Header = () => {
     return ( 
         <div className="navbar">
-            <h1>header</h1>
+            <h1>My Preparation</h1>
             <div className="links">
                 <Link to="/About" >About</Link>
-                <Link to="/signin">Sign in</Link>
             </div>
         </div>
      );

@@ -6,6 +6,8 @@ import Signin from './components/Signin';
 import Footer from './components/Footer';
 import Signup from './components/Signup';
 import Tasks from './components/Tasks';
+import SubTasks from './components/SubTasks';
+import Notes from './components/Notes';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
           <Route exact path='/about' element ={<About/>}/>
           <Route exact path='/signup' element ={<Signup/>} />
           <Route exact path='/tasks' element={<Tasks/>} />
+          <Route exact path='/subtasks' element={<SubTasks/>}/>
+          <Route exact path='/notes' element={<Notes/>}/>
         </Routes>
         </div>
         <Footer/>

@@ -97,8 +97,8 @@ body {
 
 .Maindiv {
   position: relative;
-  height: stretch;
   max-width: 100%;
+  width: 100%;
 }
 
 #footer {
@@ -118,7 +118,8 @@ body {
 
 .card {
   justify-content: center;
-
+  align-items: center;
+  height: 200px;
   background-color: #333;
   width: 200px;
   margin: 10;
@@ -126,8 +127,46 @@ body {
 
 .addTaskdiv {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
 }
 
-.gh {
-  float: right;
+
+.stv{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stl{
+  padding: 5px;
+  margin: 5px;
+  background: #d7cccc;
+  min-height: 500px;
+  border-radius: 1%;
+  height: 600px;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  scrollbar-color: #333;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+.stn{
+  height: 600px;
+  width: 80%;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a{
+  color: #d7cccc;
+ text-decoration-color: #d7cccc;
 }
